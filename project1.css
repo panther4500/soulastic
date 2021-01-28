@@ -35,7 +35,7 @@ header li a {
     color: rgb(98, 43, 226);
     font-size: 1.5rem;
   }
-  header li a:hover {
+header li a:hover {
     color: #eb0e6a;
     transform: scale(1.2);
   }
@@ -126,11 +126,12 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   }
   
   
-  @media (min-width: 52em) {
+  @media (min-width: 65rem) {
     header li { 
       float: left;
       overflow: hidden;
     }
+   
     header li a {
       padding: 20px 30px;
     }
@@ -143,6 +144,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     header .menu-icon {
       display: none;
     }
+    
   }
 
   .home{
@@ -193,22 +195,45 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 }
 
 @media (max-width: 55em) {
+  header li a:hover{
+    color: white;
+  }
+  header li:hover{
+    background-color: rgba(83, 58, 197, 0.829);
+  }
       .quote1{
         text-align: center;
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin:2rem 0 1rem;
 
       }
       .button2{
         font-size: 1.5rem;
         position: absolute;
-        left: 40%;
+        left: 42%;
 
       }
       .img1{
         height: 25rem;
-        margin:1rem auto 2rem;
+       margin-left: auto;
+       margin-right: auto;
       }
+      header .logo{
+        display: inline-block;
+        float: left;
+        height: 4em;
+        margin: 0 1em;}
+
+        header{
+          background-color: #3AF3BB;
+          max-height: 4rem;
+           }
+           header .menu-icon {
+            
+            padding: 1.4rem 0 7rem 7rem;
+            position: relative;
+            user-select: none;
+          }
 
 }
 
@@ -282,8 +307,13 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   font-size: 2.5rem;
 }
 @media (max-width: 55em){
+  .img1{
+    height: 20rem;
+    float: left;
+  }
+
   #about1{
-    font-size: 3rem;
+    font-size: 2rem;
   }
   #about{
     min-height: 60rem;
