@@ -175,8 +175,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   }
   .button2{
     font-family: 'Cookie', cursive;
-    position: relative;
-    left: 65%;
+    float: right;
     font-size: 2rem;
     color: #eb0e6a;
     background: inherit;
@@ -222,7 +221,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
         display: inline-block;
         float: left;
         height: 4em;
-        margin: 0 1em;}
+        margin: 0 ;}
 
         header{
           background-color: #3AF3BB;
@@ -231,12 +230,19 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
            header .menu-icon {
             
             padding: 1.4rem 0 7rem 7rem;
-            position: relative;
+            display: inline-block;
             user-select: none;
           }
 
 }
 
+@media (max-width:25rem){
+  header .menu-icon {
+            
+    padding: 1.4rem 0 7rem 0rem;
+   
+  }
+}
 #about{
   display: block;
   background-color:#3af3bc ;
@@ -594,8 +600,9 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 	width: 300px;
 	height: 300px;
 	border-radius: 100%;
-	background: linear-gradient(165deg, rgb(50, 236, 196) 0%, rgb(155, 68, 212) 40%, rgb(145, 79, 231) 98%, rgb(10, 10, 10) 100%);
-	position: relative;
+	background: linear-gradient(165deg, rgb(253, 255, 255) 0%, rgb(242, 238, 245) 40%, rgb(255, 255, 255) 98%, rgb(245, 239, 239) 100%);
+  position: relative;
+  
 }
 .loader {
 	
@@ -610,17 +617,17 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 	border-bottom: 0 solid #5e2b2b05;
 	
 	box-shadow: 
-		0 -10px 20px 20px #2efac780 inset,
-		0 -5px 15px 10px #21ebbfb7 inset,
-		0 -2px 5px #1ce2c1ea inset,
-		0 -3px 2px #ffffffc5 inset,
-		0 2px 0px #ffffff,
-		0 2px 3px #ffffff,
-		0 5px 5px #43f0bc90,
-		0 10px 15px #ffffff60,
-		0 10px 20px 20px #e5ebe840;
-	filter: blur(4px);
-	animation: 2s rotate linear infinite;
+		0 -10px 20px 20px #6830c4a4 inset,
+		0 -5px 15px 10px #5b36ccb7 inset,
+		0 -2px 5px #4017b3ea inset,
+		0 -3px 2px #7906e6c5 inset,
+		0 2px 0px #4c0999,
+		0 2px 3px #440966,
+		0 5px 5px #2e066e90,
+		0 10px 15px #360a8a9a,
+		0 10px 20px 20px #7b37e940;
+	filter: blur(1px);
+	animation: 2.4s rotate linear infinite;
 }
 
 @keyframes rotate {
@@ -630,7 +637,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 }
 .center { 
   position: absolute; 
-  top: 0; 
+  top: 10rem; 
   bottom: 0; 
   left: 0; 
   right: 0; 
@@ -640,11 +647,11 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   display: block;
   position:absolute;
   top:8rem;
-  left: 25%;
+  left: 22%;
   text-align: center;
   font-family: 'Cookie', cursive;
-  font-size: 2rem;
-  color: rgb(59, 243, 188);
+  font-size: 2.2rem;
+  color: rgb(95, 34, 194);
   
 }
 
